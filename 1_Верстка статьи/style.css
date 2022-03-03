@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  background-color: rgb(196, 196, 196, .5);
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+}
+
+header,
+main,
+footer,
+.menu {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+}
+
+  main,
+  footer,
+  section {
+    max-width: 1200px;
+    padding: 50px;
+  }
+
+  .title_main,
+  .title_section,
+  .title_menu {
+    text-transform: uppercase;
+  }
+
+  .title_main,
+  .title_section,
+  .title-text,
+  .strong {
+    font-weight: bold;
+  }
+
+  .strong {
+    font-style: italic;
+  }
+
+  .title_section {
+    position: relative;
+    font-size: 1.25rem;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  .title_section::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+
+    width: 100px;
+    border-bottom: solid 3px #858380;
+  }
+
+  .title_text {
+    font-size: 1.125rem;
+    margin-bottom: 25px;
+    margin-top: 35px;
+  }
+
+  .text {
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #170c57;
+  }
+
+  header {
+    position: relative;
+    min-height: 450px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   }
+
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+  }
+  .title_main {
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #fff;
+    color: #fff;
+    z-index: 2;
+  }
+
+  .menu {
+    max-width: 1200px;
+    padding: 50px 50px 0 70px;
+  }
+
+  .title_menu {
+    font-weight: bold;
+    margin-bottom: 10px;
+  } 
+
+  .link_menu {
+    font-size: 1rem;
+  }
+
+  .link:hover {
+    text-decoration: underline;
+    text-shadow: .5px 0 1px #170c57;
+  }
+
+  .img {
+    display: block;
+    max-width: 80%;
+    margin: 20px auto;
+  }
+
+  .list_text {
+    padding-left: 15px;
+  }
+
+  .list_exampl {
+    list-style-type: none;
+    padding-left: 35px;
+  }
+
+  .descr {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color:#858380;
+    font-style: italic;
+  }
+
+  .text_code {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem ;
+  }
+
+  .margin_text {
+    margin-top: 20px;
+  }
+
+  .to_up {
+    position:fixed;
+    bottom: 10%;
+    right: 15%;
+
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    text-align: left;
+    
+    background-image: url(img/arrow.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 25px 30px;
+     
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 15%;
+  }
+
+  .to_up:hover {
+    cursor: pointer;
+  }
+
+  .link_to_up {
+    text-decoration: none;
+    color:#170c57;
+  }
+
+  .original {
+    display: block;
+    color:#858380;
+    text-align: end;
+  }
+
+  @media (max-width: 800px) {
+    header,
+    main,
+    footer,
+    section {
+      width: 100vw;
+      padding: 15px 35px 15px 15px;
+    }
+
+    .menu {
+      padding: 25px 25px 0 40px;
+    }
+
+    .to_up {
+      width: 50px;
+      height: 50px;
+
+      background-position: center center;
+      background-size: 25px 30px;
+      
+      font-size: 0rem;
+    }
+
+    header {
+      min-height: 300px;
+    }
+
+    .title_main {
+      font-size: 30px;
+    }
+
+    .title_section,
+    .title_text {
+      margin-right: 25px;
+    }
+    .title_section::before {
+      display:none;
+    }
+  }
