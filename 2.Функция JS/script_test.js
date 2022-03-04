@@ -4,7 +4,7 @@ function getDayInfo(date) {
   let newDate = new Date(reverseDate);
   let days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
   let monthes = ["Января","Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
-  console.log( reverseDate);
+  
   return `${days[newDate.getDay()]}, ${Math.ceil(newDate.getDate() / 7)} неделя ${monthes[newDate.getMonth()]} ${newDate.getFullYear()} года`;
 }
 
